@@ -70,6 +70,13 @@ function handleFormSubmit(event) { // handles form submit withtout any jquery
 }
 
 function loaded() {
+    try{
+        var name = parent.document.querySelector( '.d2l-navigation-s-personal-menu-text' ).innerText;
+        console.log( name );
+    }
+    catch{
+
+    }
     console.log('contact form submission handler loaded successfully');
     // bind to the submit event of our form
     var form = document.getElementById('gform');
