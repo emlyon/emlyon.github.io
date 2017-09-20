@@ -74,8 +74,8 @@ function loaded() {
         var name = parent.document.querySelector( '.d2l-navigation-s-personal-menu-text' ).innerText;
         console.log( name );
     }
-    catch{
-
+    catch(e){
+        console.log(e);
     }
     console.log('contact form submission handler loaded successfully');
     // bind to the submit event of our form
