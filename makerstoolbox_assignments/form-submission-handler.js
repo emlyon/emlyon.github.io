@@ -71,6 +71,7 @@ function handleFormSubmit(event) { // handles form submit withtout any jquery
 
 function loaded() {
     try{
+        console.log( parent );
         var name = parent.document.querySelector( '.d2l-navigation-s-personal-menu-text' ).innerText;
         console.log( name );
     }
